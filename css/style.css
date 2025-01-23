@@ -99,8 +99,8 @@ div {
 }
 
 img {
-    display: flex;
-    justify-content: end;
+    /* display: flex;
+    justify-content: end; */
 }
 
 .pdp {
@@ -155,4 +155,18 @@ img {
     filter: brightness(0) invert(1) sepia(1) saturate(10000%) hue-rotate(179deg);
 }
 
+.photo-container {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    margin-top: 4.5rem;
+}
+
+.photo1 {
+    max-width: none;
+    height: 22rem;
+    width: auto;
+    clip-path: inset(0 0 0 15rem);
+    border-radius: 2rem;
+}
 
