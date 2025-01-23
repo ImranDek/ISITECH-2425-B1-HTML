@@ -98,11 +98,6 @@ div {
     display: flex;
 }
 
-img {
-    /* display: flex;
-    justify-content: end; */
-}
-
 .pdp {
     margin: 5rem;
     border: solid;
@@ -158,15 +153,19 @@ img {
 .photo-container {
     display: flex;
     justify-content: space-between;
-    overflow: hidden;
-    margin-top: 4.5rem;
+    margin: 4.5rem 0 0 4.5rem;
 }
-
 .photo1 {
-    max-width: none;
-    height: 22rem;
-    width: auto;
-    clip-path: inset(0 0 0 15rem);
-    border-radius: 2rem;
+    width: 20rem;
+    height: 25rem;
+    border-radius: 20%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    transform: scale(0.98);
+    transition: transform 0.3s ease;
 }
 
+.photo1:hover {
+    transform: scale(1);
+}
