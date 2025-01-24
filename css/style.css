@@ -4,6 +4,7 @@
 }
 
 body {
+    border: 0;
     margin: 0;
     background-color: #000000 ;
     font-family: "Lexend", serif;
@@ -18,7 +19,7 @@ header {
     width: 65%;
     margin-left: 50%;
     transform: translate(-50%);
-    background-color: #18181b;
+    background-color: #18181b  ;
     border-left: solid;
     border-right: solid;
     border-color: #3a3a3b;
@@ -61,7 +62,7 @@ p {
 
 nav {
     height: 1rem;
-    width: 20rem;
+    width: 30rem;
     margin-top: 2rem;
     margin-left: 50%;
     transform: translate(-50%);
@@ -81,9 +82,10 @@ nav ul {
     list-style: none;
 }
 
-#top {
+.sticky-menu {
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 nav a {
