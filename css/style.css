@@ -39,7 +39,7 @@ section {
 }
 
 main {
-    height: 50rem;
+    height: 55rem;
     width: 65%;
     margin-left: 50%;
     transform: translate(-50%);
@@ -79,6 +79,11 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     list-style: none;
+}
+
+#top {
+    position: sticky;
+    top: 0;
 }
 
 nav a {
@@ -127,8 +132,6 @@ div {
 
 .reseaux {
     display: flex;
-    width: 1.5rem;
-    height: 1.5rem;
     margin-left: 5rem;
     margin-top: 2rem;
     gap: 2rem;  
@@ -136,6 +139,8 @@ div {
 
 .logo {
     filter: brightness(0) invert(47%) sepia(100%) saturate(45%) hue-rotate(180deg);
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .github:hover {
@@ -152,13 +157,27 @@ div {
 
 .photo-container {
     display: flex;
-    justify-content: space-between;
-    margin: 4.5rem 0 0 4.5rem;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
 }
 .photo1 {
+    width: 17rem;
+    height: 25rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    transform: scale(0.98);
+    transition: transform 0.3s ease;
+}
+
+.photo1:hover {
+    transform: scale(1);
+}
+
+.photo2 {
     width: 20rem;
     height: 25rem;
-    border-radius: 20%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -166,6 +185,6 @@ div {
     transition: transform 0.3s ease;
 }
 
-.photo1:hover {
+.photo2:hover {
     transform: scale(1);
 }
