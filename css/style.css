@@ -4,9 +4,8 @@
 }
 
 body {
-    border: 0;
     margin: 0;
-    background-color: #000000 ;
+    background-color: #111111;
     font-family: "Lexend", serif;
     font-optical-sizing: auto;
     font-style: normal;
@@ -14,33 +13,32 @@ body {
 }
 
 header {
-    display: flex;
-    height: 7.5rem;
+    height: 80px;
     width: 65%;
     margin-left: 50%;
     transform: translate(-50%);
-    background-color: #18181b  ;
-    border-left: solid;
-    border-right: solid;
-    border-color: #3a3a3b;
-    border-width: 0.05rem;
+}
+
+#sticky-menu {
+    position: sticky;
+    top: 5px;
+    z-index: 55;
 }
 
 section {
     display: flex;
     height: 15rem;
-    width: 65%;
+    width: 100%;
     margin-left: 50%;
     transform: translate(-50%);
     background-color: #18181b;
-    border-left: solid;
-    border-right: solid;
-    border-color: #303033;
-    border-width: 0.05rem;
 }
 
 main {
-    height: 55rem;
+    position: relative;
+    top: -115px;
+    height: 100rem;
+    padding: 8rem;
     width: 65%;
     margin-left: 50%;
     transform: translate(-50%);
@@ -80,12 +78,6 @@ nav ul {
     justify-content: center;
     gap: 2rem;
     list-style: none;
-}
-
-.sticky-menu {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
 }
 
 nav a {
